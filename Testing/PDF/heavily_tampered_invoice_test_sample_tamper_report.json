@@ -1,0 +1,219 @@
+{
+  "file": "D:\\Adrosonic\\Testing\\PDF\\heavily_tampered_invoice_test_sample.pdf",
+  "risk_score": 59,
+  "verdict": "LIKELY TAMPERED",
+  "flags": [
+    {
+      "page": 1,
+      "field": "PDF metadata",
+      "reason": "Metadata stripped (no creation date or producer)",
+      "severity": "low",
+      "check": "metadata",
+      "bbox": null,
+      "marker": "red"
+    },
+    {
+      "page": 1,
+      "field": "PDF structure",
+      "reason": "2 %%EOF markers: file was saved incrementally",
+      "severity": "medium",
+      "check": "metadata",
+      "bbox": null,
+      "marker": "red"
+    },
+    {
+      "page": 1,
+      "field": "I1,4",
+      "reason": "One word is rendered in two fonts (ZapfDingbats 11.0pt / Times-Roman 11.0pt)",
+      "severity": "high",
+      "check": "font",
+      "bbox": [
+        1388,
+        1003,
+        130,
+        41
+      ],
+      "marker": "yellow"
+    },
+    {
+      "page": 1,
+      "field": "I26,",
+      "reason": "One word is rendered in two fonts (ZapfDingbats 9.5pt / Helvetica 9.5pt)",
+      "severity": "high",
+      "check": "font",
+      "bbox": [
+        1417,
+        1078,
+        101,
+        36
+      ],
+      "marker": "yellow"
+    },
+    {
+      "page": 1,
+      "field": "I5,0",
+      "reason": "One word is rendered in two fonts (ZapfDingbats 9.5pt / Helvetica 9.5pt)",
+      "severity": "high",
+      "check": "font",
+      "bbox": [
+        1432,
+        1153,
+        86,
+        36
+      ],
+      "marker": "yellow"
+    },
+    {
+      "page": 1,
+      "field": "I1,2",
+      "reason": "One word is rendered in two fonts (ZapfDingbats 16.0pt / Times-Bold 16.0pt)",
+      "severity": "high",
+      "check": "font",
+      "bbox": [
+        1329,
+        1242,
+        189,
+        62
+      ],
+      "marker": "yellow"
+    },
+    {
+      "page": 1,
+      "field": "2",
+      "reason": "Number uses font family 'Courier-Bold'; 85% of other numbers use a different font family",
+      "severity": "medium",
+      "check": "font",
+      "bbox": [
+        926,
+        705,
+        21,
+        50
+      ],
+      "marker": "yellow"
+    },
+    {
+      "page": 1,
+      "field": "4",
+      "reason": "Number uses font family 'Courier-Bold'; 85% of other numbers use a different font family",
+      "severity": "medium",
+      "check": "font",
+      "bbox": [
+        178,
+        924,
+        21,
+        51
+      ],
+      "marker": "yellow"
+    },
+    {
+      "page": 1,
+      "field": "3",
+      "reason": "Number uses font family 'Courier-Bold'; 85% of other numbers use a different font family",
+      "severity": "medium",
+      "check": "font",
+      "bbox": [
+        926,
+        924,
+        21,
+        51
+      ],
+      "marker": "yellow"
+    },
+    {
+      "page": 1,
+      "field": "Fonts",
+      "reason": "7 distinct fonts embedded on one page",
+      "severity": "low",
+      "check": "font",
+      "bbox": null,
+      "marker": "yellow"
+    },
+    {
+      "page": 1,
+      "field": "1,20,000",
+      "reason": "Digit height 39px vs typical 24px for numbers on the page",
+      "severity": "low",
+      "check": "layout",
+      "bbox": [
+        1331,
+        1258,
+        187,
+        39
+      ],
+      "marker": "red"
+    },
+    {
+      "page": 1,
+      "field": "145,500",
+      "reason": "Low OCR confidence (30%) on numeric field",
+      "severity": "low",
+      "check": "layout",
+      "bbox": [
+        1389,
+        1015,
+        129,
+        25
+      ],
+      "marker": "red"
+    },
+    {
+      "page": 1,
+      "field": "1,20,000",
+      "reason": "Low OCR confidence (34%) on numeric field",
+      "severity": "low",
+      "check": "layout",
+      "bbox": [
+        1331,
+        1258,
+        187,
+        39
+      ],
+      "marker": "red"
+    },
+    {
+      "page": 1,
+      "field": "Subtotal 145,500.00",
+      "reason": "Line amounts add up to 150,500.00, not the stated subtotal",
+      "severity": "high",
+      "check": "rule",
+      "bbox": [
+        1389,
+        1015,
+        129,
+        25
+      ],
+      "marker": "red"
+    },
+    {
+      "page": 1,
+      "field": "Total 120,000.00",
+      "reason": "Expected total is 166,690.00, but the total shown is 120,000.00",
+      "severity": "high",
+      "check": "rule",
+      "bbox": [
+        1331,
+        1258,
+        187,
+        39
+      ],
+      "marker": "red"
+    },
+    {
+      "page": 1,
+      "field": "05/08/2024",
+      "reason": "Due date (05 Aug 2024) is earlier than invoice date (15 Aug 2024)",
+      "severity": "high",
+      "check": "rule",
+      "bbox": [
+        1342,
+        281,
+        176,
+        28
+      ],
+      "marker": "red"
+    }
+  ],
+  "annotated_files": [
+    "D:\\Adrosonic\\Testing\\PDF\\heavily_tampered_invoice_test_sample_annotated.png"
+  ]
+}

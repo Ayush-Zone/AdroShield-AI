@@ -1,0 +1,25 @@
+{
+  "file": "D:/Adrosonic/Testing/PDF/BrightTech Solutions Invoice.pdf",
+  "risk_score": 4,
+  "verdict": "SUSPICIOUS",
+  "flags": [
+    {
+      "page": 1,
+      "field": "PDF metadata",
+      "reason": "Metadata stripped (no creation date or producer)",
+      "severity": "low",
+      "check": "metadata",
+      "bbox": null,
+      "marker": "red"
+    },
+    {
+      "page": 1,
+      "field": "PDF structure",
+      "reason": "2 %%EOF markers: file was saved incrementally (edited after creation)",
+      "severity": "medium",
+      "check": "metadata",
+      "bbox": null,
+      "marker": "red"
+    }
+  ]
+}

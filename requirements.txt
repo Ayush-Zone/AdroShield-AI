@@ -1,0 +1,10 @@
+transformers
+accelerate
+pillow
+huggingface_hub
+safetensors
+qwen-vl-utils
+Flask
+Werkzeug
+pytesseract
+pymupdf
